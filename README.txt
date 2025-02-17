@@ -1,10 +1,7 @@
-TO RUN C++ CODE 
+# JWKS Server
 
-g++ -o jwks_server main.cpp -lcrow -lssl -lcrypto -ljwt-cpp -lgtest -pthread
-./jwks_server
+## Overview
+This project implements a RESTful JWKS server that provides public keys with unique identifiers (kid) for verifying JSON Web Tokens (JWTs), implements key expiry for enhanced security, and includes an authentication endpoint.
 
-
-TO RUN TESTS USING GOOGLE TEXT
-./jwks_server --gtest_output=xml:report.xml
-
-
+## Setup
+1. Clone the repository:
